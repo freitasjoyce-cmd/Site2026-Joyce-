@@ -1,6 +1,7 @@
 import streamlit as st
-col1, col2, col3 = st.columns(3)
 
+st.title("Empresas Parceiras")
+col1, col2, col3 = st.columns(3)
 with col1:
     st.image("apple.jpg", use_container_width=True)
     st.title("Apple")
