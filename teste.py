@@ -1,6 +1,23 @@
 import streamlit as st
+
+# Fundo preto + texto branco
+st.markdown("""
+    <style>
+    .stApp {
+        background-color: black;
+        color: white;
+    }
+
+    h1, h2, h3, p, div {
+        color: white;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 st.title("Empresas Parceiras")
+
 col1, col2, col3 = st.columns(3)
+
 with col1:
     st.image("apple.jpg", use_container_width=True)
     st.title("Apple")
@@ -12,6 +29,7 @@ with col2:
     st.title("Netflix")
     st.link_button("Acessar", "https://www.netflix.com/br/")
     st.write("Plataforma de filmes, séries e streaming online.")
+
 with col3:
     st.image("spacex.jpg", use_container_width=True)
     st.title("SpaceX")
