@@ -7,6 +7,17 @@ st.markdown("""
         background-color: black;
         color: white;
     }
+     /* Botões */
+    .stLinkButton a {
+        background-color: #262730;
+        color: white !important;
+        text-decoration: none;
+    }
+
+    .stLinkButton a:hover {
+        background-color: #ff4b4b;
+        color: white !important;
+    }
 
     h1, h2, h3, p, div {
         color: white;
